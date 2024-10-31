@@ -18,6 +18,22 @@ Payload Creation: Generate custom payloads for multiple operating systems (Windo
 git clone https://github.com/ShanawazAlam007/PenVeno.git
 
 cd PenVeno
+# Install Dependencies:
+
+Install GTK+ on Ubuntu or Linux:
+
+sudo apt-get update
+
+sudo apt-get install libgtkmm-3.0-dev
+
+Install Nmap for scanning
+
+sudo apt-get install nmap
+
+Install msfvenom (part of Metasploit Framework)
+
+sudo apt-get install metasploit-framework
+
 
 ![image](https://github.com/user-attachments/assets/be685d4b-0674-4d7a-bf03-01c049527a4e)
 
