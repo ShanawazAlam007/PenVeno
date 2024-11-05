@@ -4,13 +4,13 @@ PenVeno is a user-friendly penetration testing tool specifically designed for cy
 
 Features:
 
-OS Detection: Identify the operating system of a target device via IP address.
++ OS Detection: Identify the operating system of a target device via IP address.
 
-Port Scanning: Scan specific ports or a range of ports on a target device.
++ Port Scanning: Scan specific ports or a range of ports on a target device.
 
-DNS Mapping: Map domain names to IP addresses for network analysis.
++ DNS Mapping: Map domain names to IP addresses for network analysis.
 
-Payload Creation: Generate custom payloads for multiple operating systems (Windows, Linux, Mac, Android, iOS), with options for encryption and encoding.
++ Payload Creation: Generate custom payloads for multiple operating systems (Windows, Linux, Mac, Android, iOS), with options for encryption and encoding.
 
 
 # Installation
