@@ -43,7 +43,7 @@ sudo apt-get install metasploit-framework
 # Compile the Program
 
 ```
-g++ -std=c++11 -o PenVeno PenVeno.c++ `pkg-config gtkmm-3.0 --cflags --libs`  
+g++ -o PenVeno PenVeno.c++ `pkg-config gtkmm-3.0 --cflags --libs`  
 ```
 # Requirements
 
