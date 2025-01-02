@@ -17,7 +17,8 @@ public:
         options.append("2. Scan Port");
         options.append("3. DNS Mapping");
         options.append("4. Create Payload");
-        options.append("5. Exit");
+        options.append("5. Create Custom Wordlist");
+        options.append("6. Exit");
         options.set_active(0);  
         options.signal_changed().connect(sigc::mem_fun(*this, &MainWindow::on_option_changed));
 
@@ -65,7 +66,9 @@ protected:
             open_dns_mapping_page();
         } else if (selected_option == "4. Create Payload") {
             open_create_payload_page();
-        } else if (selected_option == "5. Exit") {
+        }else if(selected_option=="5. Create Custom Wordlist"){
+            open_create_custom_wordlist();
+        } else if (selected_option == "6. Exit") {
             close();
         } else {
             cout << "Please select a valid option." << endl;
@@ -326,6 +329,52 @@ void open_scan_port_page() {
             }
         }
     }
+    
+    void open_create_custom_wordlist(){
+        Gtk::Dialog dialog("Create custome Wordlist", *this);
+        Gtk::Label label1("Enter the minimum length of word:");
+        Gtk::Entry min_entry;
+        Gtk::Label label2("Enter the maximun length of the word:");
+        Gtk::Entry max_entry;
+        Gtk::Label label3("Enter the character set (e.g. ,abc#21):");
+        Gtk::Entry charset_entry;
+        Gtk::Label label4("Enter the output file name:");
+        Gtk::Entry output_file_entry;
+        
+        dialog.get_content_area()->pack_start(label1);
+        dialog.get_content_area()->pack_start(min_entry);
+        dialog.get_content_area()->pack_start(label2);
+        dialog.get_content_area()->pack_start(max_entry);
+        dialog.get_content_area()->pack_start(label3);
+        dialog.get_content_area()->pack_start(charset_entry);
+        dialog.get_content_area()->pack_start(label4);
+        dialog.get_content_area()->pack_start(output_file_entry);
+        
+        dialog.add_button("Create", Gtk::RESPONSE_OK);
+        dialog.add_button("Cancel", Gtk::RESPONSE_CANCEL);
+        dialog.show_all_children();
+        
+        if (dialog.run() == Gtk::RESPONSE_OK) {
+            string min_length = min_entry.get_text();
+            string max_length = max_entry.get_text();
+            string charset = charset_entry.get_text();
+            string output_file = output_file_entry.get_text();
+
+            if (min_length.empty() || max_length.empty() || charset.empty() || output_file.empty()) {
+                cerr << "All fields must be filled out." << endl;
+                return;
+            }
+
+            if (!all_of(min_length.begin(), min_length.end(), ::isdigit) ||
+                !all_of(max_length.begin(), max_length.end(), ::isdigit)) {
+                cerr << "Minimum and maximum lengths must be numeric." << endl;
+                return;
+            }
+
+            string command = "gnome-terminal -- bash -c 'crunch " + min_length + " " + max_length + " " + charset + " -o " + output_file + "; exec bash'";
+            system(command.c_str());
+        }
+    }
 };
 
 int main(int argc, char *argv[]) {
@@ -335,4 +384,3 @@ int main(int argc, char *argv[]) {
 
     return app->run(window);
 }
-
