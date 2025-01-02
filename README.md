@@ -12,6 +12,8 @@ Features:
 
 + Payload Creation: Generate custom payloads for multiple operating systems (Windows, Linux, Mac, Android, iOS), with options for encryption and encoding.
 
++ Custom Wordlist:
+
 
 # Installation
 ```
@@ -41,7 +43,7 @@ sudo apt-get install metasploit-framework
 # Compile the Program
 
 ```
-g++ PenVeno.cpp -o PenVeno `pkg-config --cflags --libs gtkmm-3.0`
+g++ -std=c++11 -o PenVeno PenVeno.c++ `pkg-config gtkmm-3.0 --cflags --libs`  
 ```
 # Requirements
 
