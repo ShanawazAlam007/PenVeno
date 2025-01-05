@@ -39,6 +39,11 @@ Install msfvenom (part of Metasploit Framework)
 ```
 sudo apt-get install metasploit-framework
 ```
+
+Install crunch tool
+```
+sudo apt install crunch
+```
 # Compile the Program
 
 ```
@@ -49,7 +54,7 @@ g++ -o PenVeno PenVeno.c++ `pkg-config gtkmm-3.0 --cflags --libs`
 - Operating System: Linux
 - Memory: Minimum 1 GB RAM
 - Storage: Minimum 100 MB disk space
-- Dependencies: GTK+, nmap, dnsmap, msfvenom
+- Dependencies: GTK+, nmap, dnsmap, msfvenom , crunch
 
 # Usage
 
@@ -60,9 +65,12 @@ PenVeno provides a graphical interface where users can select various penetratio
 - DNS Mapping: Enter a domain name or IP to retrieve DNS mapping data.
 - Payload Creation: Create custom payloads for different operating systems with selectable encryption options.
 
-  # ScreenShots
 
-  - OS Detection: Interface showing IP entry and result output.
+- Custom Wordlist: Generate custom wordlists for password cracking using the Crunch tool. Specify character sets, minimum and maximum word lengths, and other parameters to create tailored wordlists for your needs.
+
+# ScreenShots
+
+- OS Detection: Interface showing IP entry and result output.
 
     ![image](https://github.com/user-attachments/assets/c2ebffb0-fe2f-45ca-a079-50057f7db489)
 
