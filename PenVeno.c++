@@ -8,7 +8,7 @@ using namespace std;
 class MainWindow : public Gtk::Window {
 public:
     MainWindow() {
-        set_title("Cybersecurity Tool");
+        set_title("PenVeno Tool");
         set_default_size(400, 300); 
 
         
