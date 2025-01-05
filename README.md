@@ -12,8 +12,7 @@ Features:
 
 + Payload Creation: Generate custom payloads for multiple operating systems (Windows, Linux, Mac, Android, iOS), with options for encryption and encoding.
 
-+ Custom Wordlist:
-
++ Custom Wordlist: Create custom wordlists for password cracking.
 
 # Installation
 ```
@@ -50,7 +49,7 @@ g++ -o PenVeno PenVeno.c++ `pkg-config gtkmm-3.0 --cflags --libs`
 - Operating System: Linux
 - Memory: Minimum 1 GB RAM
 - Storage: Minimum 100 MB disk space
-- Dependencies: GTK+, nmap, dnsmap, msfvenom, crunch
+- Dependencies: GTK+, nmap, dnsmap, msfvenom
 
 # Usage
 
@@ -60,28 +59,27 @@ PenVeno provides a graphical interface where users can select various penetratio
 - Port Scanning: Choose between single port or range scan modes for target IPs.
 - DNS Mapping: Enter a domain name or IP to retrieve DNS mapping data.
 - Payload Creation: Create custom payloads for different operating systems with selectable encryption options.
-- Custom Wordlist: Generate custom wordlists for password cracking by specifying character sets and word lengths.
 
-# ScreenShots
+  # ScreenShots
 
-- OS Detection: Interface showing IP entry and result output.
+  - OS Detection: Interface showing IP entry and result output.
 
-  ![image](https://github.com/user-attachments/assets/c2ebffb0-fe2f-45ca-a079-50057f7db489)
+    ![image](https://github.com/user-attachments/assets/c2ebffb0-fe2f-45ca-a079-50057f7db489)
 
-- Port Scanning: Fields for entering IP, port, or port range.
-  ![image](https://github.com/user-attachments/assets/1c9bea4e-963d-4160-87bd-11a8046c9b55)
-  - Scanning a specific port:
-     ![image](https://github.com/user-attachments/assets/bb49f3c9-0fa0-487c-9d91-cc5701d2a281)
-  - Scanning a range of port:
-     ![image](https://github.com/user-attachments/assets/dee91ae2-f51e-4868-bf68-11cd857b7c5b)
-  - Shows the open port:
-    ![image](https://github.com/user-attachments/assets/a87f27ba-ecb9-47f6-9f4e-1be01ea10530)
-- Payload Creation: Interface for setting target OS, encryption, and custom payload name.
+  - Port Scanning: Fields for entering IP, port, or port range.
+    ![image](https://github.com/user-attachments/assets/1c9bea4e-963d-4160-87bd-11a8046c9b55)
+    - Scanning a specific port:
+       ![image](https://github.com/user-attachments/assets/bb49f3c9-0fa0-487c-9d91-cc5701d2a281)
+    - Scanning a range of port:
+       ![image](https://github.com/user-attachments/assets/dee91ae2-f51e-4868-bf68-11cd857b7c5b)
+    - Shows the open port:
+      ![image](https://github.com/user-attachments/assets/a87f27ba-ecb9-47f6-9f4e-1be01ea10530)
+  - Payload Creation: Interface for setting target OS, encryption, and custom payload name.
 ![image](https://github.com/user-attachments/assets/f84a14d7-1d10-42c5-affd-f55119bbf8ba)
-   - Entering Detail for iterative encryption:
-     ![image](https://github.com/user-attachments/assets/126731cb-f4d8-448f-a06f-8bd60264c25c)
-   -  Payload successfully created:
-     ![image](https://github.com/user-attachments/assets/8c1eedcd-aaa3-4da3-bc66-2c556324d1db)
+     - Entering Detail for iterative encryption:
+       ![image](https://github.com/user-attachments/assets/126731cb-f4d8-448f-a06f-8bd60264c25c)
+     -  Payload successfully created:
+       ![image](https://github.com/user-attachments/assets/8c1eedcd-aaa3-4da3-bc66-2c556324d1db)
 # Contributing
  We welcome contributions to enhance PenVeno! Please follow these steps:
 
