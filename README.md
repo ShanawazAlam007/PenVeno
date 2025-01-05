@@ -71,23 +71,26 @@ PenVeno provides a graphical interface where users can select various penetratio
 # ScreenShots
 
 - OS Detection: Interface showing IP entry and result output.
+  ![image](https://github.com/user-attachments/assets/c2ebffb0-fe2f-45ca-a079-50057f7db489)
 
-    ![image](https://github.com/user-attachments/assets/c2ebffb0-fe2f-45ca-a079-50057f7db489)
+- Port Scanning: Fields for entering IP, port, or port range.
+  ![image](https://github.com/user-attachments/assets/1c9bea4e-963d-4160-87bd-11a8046c9b55)
+  - Scanning a specific port:
+     ![image](https://github.com/user-attachments/assets/bb49f3c9-0fa0-487c-9d91-cc5701d2a281)
+  - Scanning a range of port:
+     ![image](https://github.com/user-attachments/assets/dee91ae2-f51e-4868-bf68-11cd857b7c5b)
+  - Shows the open port:
+    ![image](https://github.com/user-attachments/assets/a87f27ba-ecb9-47f6-9f4e-1be01ea10530)
+- Payload Creation: Interface for setting target OS, encryption, and custom payload name.
+  ![image](https://github.com/user-attachments/assets/f84a14d7-1d10-42c5-affd-f55119bbf8ba)
+  - Entering Detail for iterative encryption:
+    ![image](https://github.com/user-attachments/assets/126731cb-f4d8-448f-a06f-8bd60264c25c)
+  - Payload successfully created:
+    ![image](https://github.com/user-attachments/assets/8c1eedcd-aaa3-4da3-bc66-2c556324d1db)
 
-  - Port Scanning: Fields for entering IP, port, or port range.
-    ![image](https://github.com/user-attachments/assets/1c9bea4e-963d-4160-87bd-11a8046c9b55)
-    - Scanning a specific port:
-       ![image](https://github.com/user-attachments/assets/bb49f3c9-0fa0-487c-9d91-cc5701d2a281)
-    - Scanning a range of port:
-       ![image](https://github.com/user-attachments/assets/dee91ae2-f51e-4868-bf68-11cd857b7c5b)
-    - Shows the open port:
-      ![image](https://github.com/user-attachments/assets/a87f27ba-ecb9-47f6-9f4e-1be01ea10530)
-  - Payload Creation: Interface for setting target OS, encryption, and custom payload name.
-![image](https://github.com/user-attachments/assets/f84a14d7-1d10-42c5-affd-f55119bbf8ba)
-     - Entering Detail for iterative encryption:
-       ![image](https://github.com/user-attachments/assets/126731cb-f4d8-448f-a06f-8bd60264c25c)
-     -  Payload successfully created:
-       ![image](https://github.com/user-attachments/assets/8c1eedcd-aaa3-4da3-bc66-2c556324d1db)
+- Crunch Tool: Interface for generating custom wordlists. Users can specify character sets, minimum and maximum word lengths, and other parameters to create tailored wordlists for password cracking.
+  ![image](https://github.com/user-attachments/assets/crunch-tool-screenshot)
+
 # Contributing
  We welcome contributions to enhance PenVeno! Please follow these steps:
 
