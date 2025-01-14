@@ -25,7 +25,6 @@ public:
         
         vbox.pack_start(options);
 
-        // Add a button to proceed
         proceed_button.set_label("Proceed");
         proceed_button.set_size_request(200, 40); 
         proceed_button.signal_clicked().connect(sigc::mem_fun(*this, &MainWindow::on_button_clicked));
