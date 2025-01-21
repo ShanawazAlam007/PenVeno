@@ -89,6 +89,18 @@ PenVeno provides a graphical interface where users can select various penetratio
     ![image](https://github.com/user-attachments/assets/8c1eedcd-aaa3-4da3-bc66-2c556324d1db)
 
 - Crunch Tool: Interface for generating custom wordlists. Users can specify character sets, minimum and maximum word lengths, and other parameters to create tailored wordlists for password cracking.
+    - Selecting the Custom Wordlist option
+      
+       ![image](https://github.com/user-attachments/assets/da3fdc76-d659-43e2-900c-c8657428f752)
+    - Creating Custom Wordlist
+      
+      ![image](https://github.com/user-attachments/assets/ddbfbea4-5bd0-4ed7-8d11-4a1888747316)
+
+      - Output file:
+        ![image](https://github.com/user-attachments/assets/ad37a405-c96b-428a-b08e-ca5553d704d3)
+
+
+
 ![Crunch](https://github.com/user-attachments/assets/b9a47a5f-4578-4d61-91ab-8479bea1cfb3)
 
 
