@@ -92,7 +92,7 @@ protected:
                 cerr << "Invalid IP address." << endl;
             } else {
                 
-                string command = "gnome-terminal -- bash -c 'nmap -O " + ip + "; exec bash'";
+                string command = "gnome-terminal -- bash -c 'nmap -A -p- " + ip + "; exec bash'";
                 system(command.c_str());
             }
         }
